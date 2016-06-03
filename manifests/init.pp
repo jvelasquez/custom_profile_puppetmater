@@ -19,7 +19,7 @@ class custom_profile_puppetmaster {
     # eyaml_version   => 'latest',
     create_keys     => true,
     # keysdir         => "${::settings::confdir}/keys",
-    provider        => 'puppetserver_gem', #PE
+    # provider        => 'puppetserver_gem', #PE
   }
 
   ini_setting { 'puppet.conf hiera_config master section' :
