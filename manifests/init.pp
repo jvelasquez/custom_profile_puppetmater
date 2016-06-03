@@ -16,7 +16,6 @@ class custom_profile_puppetmaster {
 
     ## Configure eyaml
     eyaml           => true,
-    eyaml_extension => 'eyaml',
     # eyaml_version   => 'latest',
     create_keys     => true,
     # keysdir         => "${::settings::confdir}/keys",
