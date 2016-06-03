@@ -14,13 +14,13 @@ class custom_profile_puppetmaster {
     group           => 'pe-puppet',
     notify          => Service['pe-puppetserver'],
 
-    backends        => ['yaml', 'eyaml'],
     ## Configure eyaml
     eyaml           => true,
     eyaml_extension => 'eyaml',
     # eyaml_version   => 'latest',
     create_keys     => true,
     # keysdir         => "${::settings::confdir}/keys",
+    provider        => 'puppetserver_gem', #PE
   }
 
   ini_setting { 'puppet.conf hiera_config master section' :
