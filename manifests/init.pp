@@ -43,7 +43,7 @@ class custom_profile_puppetmaster {
   #This does not apply to code manager
   file { '/usr/local/bin/update-classes.sh' :
     ensure => file,
-    source => 'puppet:///modules/rampup_profile_puppetmaster/update-classes.sh',
+    source => 'puppet:///modules/custom_profile_puppetmaster/update-classes.sh',
     mode   => '0755',
   }
 
