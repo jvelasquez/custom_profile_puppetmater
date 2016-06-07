@@ -4,6 +4,7 @@ class custom_profile_puppetmaster {
 
   class { 'hiera':
     hierarchy       => [
+      'secure',
       'virtual/%{::virtual}',
       'nodes/%{::trusted.certname}',
       'common',
